@@ -3,66 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+    <title>IFE Project Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
+        .header {
+            background: linear-gradient(135deg, #0d6efd, #0d6efd, #0d6efd);
             color: #fff;
-            padding: 10px 0;
             text-align: center;
+            padding: 50px 20px;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
         }
-        .main-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: #0d6efd;
+            background-color: #fff;
+            padding: 10px 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
         }
-        footer {
-            background-color: #333;
+        .buttons a:hover {
+            background-color: #0d6efd;
             color: #fff;
+        }
+        .content {
+            padding: 20px;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        .content h2 {
+            color: #0d6efd;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Project Page</h1>
-        </div>
-    </header>
-    <div class="container">
-        <div class="main-content">
-            <h2>Project Title</h2>
-            <p>This is a brief description of the project. Provide an overview of the project's goals, objectives, and any important details.</p>
-            
-            <h3>Section 1</h3>
-            <p>Details about the first section of the project. Include relevant information, milestones, or deliverables.</p>
-            
-            <h3>Section 2</h3>
-            <p>Details about the second section of the project. Include relevant information, milestones, or deliverables.</p>
-            
-            <h3>Section 3</h3>
-            <p>Details about the third section of the project. Include relevant information, milestones, or deliverables.</p>
+    <div class="header">
+        <h1>IFE</h1>
+        <p>The code of IFE projects.</p>
+        <div class="buttons">
+            <a href="https://github.com">View on GitHub</a>
+            <a href="path/to/download.zip">Download .zip</a>
+            <a href="path/to/download.tar.gz">Download .tar.gz</a>
         </div>
     </div>
-    <footer>
-        <p>Copyright &copy; 2024 Your Company</p>
-    </footer>
+    <div class="content">
+        <h2>Welcome to GitHub Pages.</h2>
+        <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    </div>
 </body>
 </html>
